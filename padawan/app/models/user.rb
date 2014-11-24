@@ -3,12 +3,13 @@ class User < ActiveRecord::Base
 	attr_accessor :password
 	before_save :encrypt_password
 
-	validates_confirmation_of :password , :message => "Passwords donot match."
-	validates_presence_of :password, :message => "Please Enter a Password"
-	validates_presence_of :email,:message=>"Email ID Field cannot be blank"
-	validates_uniqueness_of :email,:message => "Sorry this Email ID is already registered."
-	validates_presence_of :first_name , :message => "First Name Field cannot be blank"
-	validates_presence_of :last_name, :message => "Last Name Field cannot be blank"
+	validates_confirmation_of :password , :message => "Le mot de passe n'est pas correct."
+    validates_presence_of :password, :message => "Saisis ton mot de passe STP"
+    validates_presence_of :email,:message=>"Tu dois saisir une adresse email"
+    validates_uniqueness_of :email,:message => "Cet email est utilise par un autre padawan."
+    validates_presence_of :first_name , :message => "C'est quoi ton prenom padawan"
+    validates_presence_of :last_name, :message => "J'ai besoin de connaitre ton nom padawan"
+
 
 	def self.authenticate(email, password)
 		user = find_by_email(email)
