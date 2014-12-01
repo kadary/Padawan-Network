@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       if @user
 		session[:user_id]=@user.id
         format.html {redirect_to root_url }
-        format.json { render :show, status: :created, location: @user }
+        format.json {status: :created, location: @user }
       else
 		session[:user_id] = nil
         format.html { render :new, notice: "Les identifiants saisis ne sont pas corrects" }
