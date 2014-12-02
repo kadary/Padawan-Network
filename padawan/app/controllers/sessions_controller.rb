@@ -11,13 +11,13 @@ class SessionsController < ApplicationController
 		session[:user_id]=@user.id	
 		respond_to do |format|
 			format.html {redirect_to root_url }
-			format.json { render :json => {:success => 1, :message => "Session ouverte"} }
+			format.json { render :json => {:success => 1, :message => "Session créer", :session => @user.id, :first_name => @user.first_name, :last_name => @user.last_name} }
 		end
     else
 		session[:user_id] = nil
 		respond_to do |format|
 			format.html { render :new, notice: "Les identifiants saisis ne sont pas corrects" }
-			format.json { render :json => {:success => 0, :message => "Session pas ouverte"} }
+			format.json { render :json => {:success => 0, :message => "Session pas créer"} }
 		end
     end
   end
