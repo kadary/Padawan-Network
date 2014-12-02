@@ -8,10 +8,13 @@ class SessionsController < ApplicationController
   def new
 	@user = User.authenticate(params[:email], params[:password])
 	if @user
-		session[:user_id]=@user.id	
+		session[:user_id]=@user.id
+		userSession = @user.id 
+		userFirstname = @user.first_name 
+		userLastname = @user.last_name
 		respond_to do |format|
 			format.html {redirect_to root_url }
-			format.json { render :json => {:success => 1, :message => "Session créer", :session => @user.id, :first_name => @user.first_name, :last_name => @user.last_name} }
+			format.json { render :json => {:success => 1, :message => "Session créer", :userSession => userSessionID, :userFirstnameID => userFirstname, :userLastnameID => userLastname} }
 		end
     else
 		session[:user_id] = nil
