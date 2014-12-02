@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
 		#, :userSessionID => @userSession, :userFirstnameID => @userFirstname, :userLastnameID => @userLastname
 		respond_to do |format|
 			format.html {redirect_to root_url }
-			format.json { render :json => {:success => 1, :message => "Utilisateur valide"} }
+			format.json { render :json => {:success => 1, :message => "Utilisateur valide", :userSessionID => @userSession, :userFirstnameID => @userFirstname, :userLastnameID => @userLastname} }
 		end
     else
 		session[:user_id] = nil
