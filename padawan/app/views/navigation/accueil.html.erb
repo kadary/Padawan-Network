@@ -1,2 +1,40 @@
-<h1>Navigation#accueil</h1>
-<p>Find me in app/views/navigation/accueil.html.erb</p>
+<% if current_user %>
+<% @status = Status.new %>
+<%=render :partial => 'statuses/newstatus.html.erb'%>
+<div id="statusfeed">
+<%= render :partial => 'statuses.html.erb', :locals => { :statuses_streams => @statuses_streams } %>
+</div></br>
+
+<% end %>
+
+<script>
+	$(document).ready(function(){
+		var timelyrefreshStatusFeeds = function(){
+			url = '/refresh'
+			$.get(url,function(data,status){
+				$('#statusfeed').html(data)
+				return false
+			});
+		};
+		setInterval(timelyrefreshStatusFeeds,60000);
+
+		$(".votes").click(function() {
+			var id = $(this).attr("id");
+			var name = $(this).attr("name");
+			var parent = $(this)
+			if (name=='up') {
+				$.get('/votedup', {id: id},
+				function(data,status){
+					parent.html(data);
+				});
+			}
+			else {
+				$.get('/voteddown', {id: id},
+				function(data,status){
+					parent.html(data);
+				});
+			}
+			return false;
+		});
+	});
+</script>

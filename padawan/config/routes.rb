@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   resources :users
   resources :sessions
+  resources :statuses
   
   root :to => 'navigation#accueil'
-
+  
   get 'navigation/profile'
 
   get 'navigation/message'
@@ -17,6 +18,11 @@ Rails.application.routes.draw do
   #Users
   get "signup" => "users#new", :as => "signup"
   
+  #Status
+  get "refresh"  => "navigation#refreshstatuses", :as => "refresh"
+  get "votedup"  => "navigation#votedup", :as => "votedup"
+  get "voteddown"  => "navigation#voteddown", :as => "voteddown"
+
 
   
 

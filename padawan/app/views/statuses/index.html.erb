@@ -1,0 +1,27 @@
+<h1>Liste des posts (Status)</h1>
+
+<table>
+  <tr>
+    <th>Posts</th>
+    <th>Posté par</th>
+    <th>Posté par uid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @statuses.each do |status| %>
+  <tr>
+    <td><%= status.post %></td>
+    <td><%= status.posted_by %></td>
+    <td><%= status.posted_by_uid %></td>
+    <td><%= link_to 'Show', status %></td>
+    <td><%= link_to 'Edit', edit_status_path(status) %></td>
+    <td><%= link_to 'Destroy', status, :method => :delete, :data => { :confirm => Êtes vous sûr?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New status', new_status_path %>

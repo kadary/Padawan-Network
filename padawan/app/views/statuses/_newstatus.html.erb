@@ -1,0 +1,9 @@
+<%= form_for(@status) do |f| %>
+<div class="field">
+    <%= f.label :post %><br />
+    <%= f.text_field :post %>
+  </div>
+<div class="actions" id="refreshstatus">
+    <%= f.submit("Publier") %>
+  </div>
+<% end %>

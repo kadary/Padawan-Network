@@ -1,0 +1,29 @@
+<%= form_for(@status) do |f| %>
+  <% if @status.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@status.errors.count, "erreur") %> empêche ce status d'être publié:</h2>
+
+      <ul>
+      <% @status.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :post %><br />
+    <%= f.text_field :post %>
+  </div>
+  <div class="field">
+    <%= f.label :posted_by %><br />
+    <%= f.text_field :posted_by %>
+  </div>
+  <div class="field">
+    <%= f.label :posted_by_uid %><br />
+    <%= f.number_field :posted_by_uid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
