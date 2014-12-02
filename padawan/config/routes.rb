@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   
   #Users
   get "signup" => "users#new", :as => "signup"
+  post "signup" => "users#new", :as => "signup"
 
   
 
