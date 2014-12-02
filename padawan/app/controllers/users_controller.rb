@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def create
 	@user = User.new(user_params)
-	Rails::logger.debug "*************************************" + user_params
+	Rails::logger.debug "*************************************" + user_params.to_s
 	if @user.save
 		session[:user_id]=@user.id
 		@userSession = @user.id 
