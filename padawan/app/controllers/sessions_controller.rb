@@ -12,9 +12,10 @@ class SessionsController < ApplicationController
 		userSession = @user.id 
 		userFirstname = @user.first_name 
 		userLastname = @user.last_name
+		#, :userSession => userSessionID, :userFirstnameID => userFirstname, :userLastnameID => userLastname
 		respond_to do |format|
 			format.html {redirect_to root_url }
-			format.json { render :json => {:success => 1, :message => "Session créer", :userSession => userSessionID, :userFirstnameID => userFirstname, :userLastnameID => userLastname} }
+			format.json { render :json => {:success => 1, :message => "Session créer"} }
 		end
     else
 		session[:user_id] = nil
