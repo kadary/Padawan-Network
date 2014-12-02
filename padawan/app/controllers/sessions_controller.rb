@@ -9,10 +9,10 @@ class SessionsController < ApplicationController
 	@user = User.authenticate(params[:email], params[:password])
 	if @user
 		session[:user_id]=@user.id
-		userSession = @user.id 
-		userFirstname = @user.first_name 
-		userLastname = @user.last_name
-		#, :userSession => userSessionID, :userFirstnameID => userFirstname, :userLastnameID => userLastname
+		@userSession = @user.id 
+		@userFirstname = @user.first_name 
+		@userLastname = @user.last_name
+		#, :userSessionID => @userSession, :userFirstnameID => @userFirstname, :userLastnameID => @userLastname
 		respond_to do |format|
 			format.html {redirect_to root_url }
 			format.json { render :json => {:success => 1, :message => "Session créer"} }
