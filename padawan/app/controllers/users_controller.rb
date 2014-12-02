@@ -5,8 +5,12 @@ class UsersController < ApplicationController
 
   def create
 	@user = User.new(user_params)
+	Rails::logger.debug user_params
 	if @user.save
 		session[:user_id]=@user.id
+		@userSession = @user.id 
+		@userFirstname = @user.first_name 
+		@userLastname = @user.last_name
 		respond_to do |format|
 			format.html {redirect_to root_url }
 			format.json { render :json => {:success => 1, :message => "Utilisateur creer", :userSessionID => @userSession, :userFirstnameID => @userFirstname, :userLastnameID => @userLastname} }
