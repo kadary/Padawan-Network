@@ -1,5 +1,5 @@
 class NavigationController < ApplicationController
-	before_filter :update_statusstreams, :only => [:accueil, :refreshstatus]
+	before_filter :update_statusstreams, :only => [:accueil, :refreshstatuses]
   def accueil
   end
   
@@ -16,7 +16,7 @@ class NavigationController < ApplicationController
 		render :text => "<div class='down'></div>"+@status.downs.to_s+" j'aime pas"
   end
 	
-  def refreshstatus
+  def refreshstatuses
 		render :partial => 'statuses.html.erb', :locals => { :statuses_streams => @statuses_streams }
   end
 
