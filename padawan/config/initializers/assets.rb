@@ -10,6 +10,10 @@ Rails.application.config.assets.precompile += %w( jquery.js )
 Rails.application.config.assets.precompile += %w( bootstrap.js )
 Rails.application.config.assets.precompile += %w( bootstrap.min.css )
 Rails.application.config.assets.precompile += %w( bootstrap-responsive.min.css )
-Rails.application.config.assets.precompile += %w( global.css.erb )
+Rails.application.config.assets.precompile += %w( global.css )
+Rails.application.config.assets.precompile += %w( default_avatar.png )
+Rails.application.config.assets.precompile += %w( status_dislike.png )
+Rails.application.config.assets.precompile += %w( status_like.png )
+Rails.application.config.assets.precompile += %w( status_dropd.png )
 
  

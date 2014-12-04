@@ -172,7 +172,7 @@ width:130px;
 .up
 {
 height:30px;
-background-image:url(status_like.png);
+background-image:url("status_like.png");
 background-repeat:no-repeat;
 margin-bottom:5px;
 -moz-border-radius: 6px;
@@ -182,7 +182,7 @@ margin-bottom:5px;
 .down
 {
 height:30px;
-background-image:url(status_dislike.png);
+background-image:url("status_dislike.png");
 background-repeat:no-repeat;
 margin-top:5px;
 -moz-border-radius: 6px;
