@@ -1,3 +1,6 @@
+//= depend_on_asset "status_like.png"
+//= depend_on_asset "status_dislike.png"
+
 /* Other Styles beside BootStrap */
 
 /* @group resets and elements */
@@ -182,7 +185,7 @@ margin-bottom:5px;
 .down
 {
 height:30px;
-background-image:url("status_dislike.png");
+background-image:url(<%= asset_path('status_dislike.png') %>);
 background-repeat:no-repeat;
 margin-top:5px;
 -moz-border-radius: 6px;
