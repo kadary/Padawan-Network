@@ -1,8 +1,14 @@
 class User < ActiveRecord::Base
+	has_many 	:received_messages,
+				:class_name => 'Message',
+				:primary_key=>'padawan_id',
+				:foreign_key => 'recepient_id'
+				#:order => "messages.created_at DESC",
+				#:conditions => ["messages.recepient_deleted = ?", false]
 	include BCrypt
 	attr_accessor :password
-	before_save :encrypt_password
-
+	before_save :encrypt_password, :create_unique_profile_id
+	
 	validates_confirmation_of :password , :message => "Le mot de passe n'est pas correct."
     validates_presence_of :password, :message => "Saisis ton mot de passe STP"
     validates_presence_of :email,:message=>"Tu dois saisir une adresse email"
@@ -25,5 +31,20 @@ class User < ActiveRecord::Base
 			self.password_salt = BCrypt::Engine.generate_salt
 			self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)
 		end
+	end
+
+	def create_unique_profile_id
+		begin
+			self.profile_id=SecureRandom.base64(8)
+		end while self.class.exists?(:profile_id =>profile_id)
+	end
+	
+	def unread_messages?
+		unread_message_count > 0 ? true : false
+	end
+	
+	# Returns the number of unread messages for this user
+	def unread_message_count
+		eval 'messages.count(:conditions => ["recepient_id = ? AND read_at IS NULL", self.padawan_id])'
 	end
 end

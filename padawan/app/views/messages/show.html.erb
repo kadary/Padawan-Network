@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @message.sender_id %>
+</p>
+
+<p>
+  <strong>Recepient:</strong>
+  <%= @message.recepient_id %>
+</p>
+
+<p>
+  <strong>Sender deleted:</strong>
+  <%= @message.sender_deleted %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @message.subject %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @message.body %>
+</p>
+
+<p>
+  <strong>Read at:</strong>
+  <%= @message.read_at %>
+</p>
+
+<p>
+  <strong>Container:</strong>
+  <%= @message.container %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
