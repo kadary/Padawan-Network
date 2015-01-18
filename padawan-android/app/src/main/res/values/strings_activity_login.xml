@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="title_activity_login">Padawan</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in">Se connecter ou S\'inscrire</string>
+    <string name="action_sign_in_short">Se connecter</string>
+    <string name="error_invalid_email">Cet email n\'est pas valide</string>
+    <string name="error_invalid_password">Ce mdp est trop court (4)</string>
+    <string name="error_network_connexion">Internet recquis/Problème serveur</string>
+    <string name="error_field_required">Ce champ est requis</string>
+
+</resources>

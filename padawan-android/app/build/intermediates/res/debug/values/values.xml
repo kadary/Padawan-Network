@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+    <string-array name="nav_drawer_items">
+        <item>Acceuil</item>
+        <item>Mes badges</item>
+        <item>Profil</item>
+        <item>Groupes</item>
+        <item>Configuration</item>
+        <item>Deconnexion</item>
+    </string-array>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="home_fragment_bg">#303030</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="list_item_title">#fff</color>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="action_sign_in">Se connecter ou S\'inscrire</string>
+    <string name="action_sign_in_short">Se connecter</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_register.xml -->
+    <eat-comment/>
+    <string name="action_sign_up">S\'inscrire</string>
+    <string name="action_sign_up_short">S\'inscrire</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Padawan</string>
+    <string name="desc_list_item_icon">Icones menu déroulant</string>
+    <string name="drawer_close">Menu déroulant fermé</string>
+    <string name="drawer_open">Menu déroulant ouvert</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="error_field_required">Ce champ est requis</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_register.xml -->
+    <eat-comment/>
+    <string name="error_field_required_signup">Ce champ est réquis</string>
+    <string name="error_incorrect_password_signup">Les mots de passe ne correspondent pas</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="error_invalid_email">Cet email n\'est pas valide</string>
+    <string name="error_invalid_password">Ce mdp est trop court (4)</string>
+    <string name="error_network_connexion">Internet recquis/Problème serveur</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_register.xml -->
+    <eat-comment/>
+    <string name="error_on_signup">Problème de création de compte</string>
+    <string name="first_name">Prénom</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_register.xml -->
+    <eat-comment/>
+    <string name="last_name">Nom</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_register.xml -->
+    <eat-comment/>
+    <string name="prompt_password_register">Confirmer le mot de passe</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_home">Padawan Network</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_login.xml -->
+    <eat-comment/>
+    <string name="title_activity_login">Padawan</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_main">Padawan</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings_activity_register.xml -->
+    <eat-comment/>
+    <string name="title_activity_register">Inscription</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_resgister">Inscription sur Padawan</string>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/styles_padawan.xml -->
+    <eat-comment/>
+    <style name="ActionBar.Solid.Padawan" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/ab_solid_padawan</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_padawan</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_padawan</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Padawan</item>
+    </style>
+    <style name="ActionBar.Transparent.Padawan" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_padawan</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Padawan</item>
+    </style>
+    <style name="ActionBarTabStyle.Padawan" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_padawan</item>
+    </style>
+    <style name="ActionButton.CloseMode.Padawan" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_padawan</item>
+    </style>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- From: file:/C:/Users/kadary/workspace/padawan-android/app/src/main/res/values/styles_padawan.xml -->
+    <eat-comment/>
+    <style name="DropDownListView.Padawan" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_padawan</item>
+    </style>
+    <style name="DropDownNav.Padawan" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_padawan</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_padawan</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_padawan</item>
+    </style>
+    <style name="PopupMenu.Padawan" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_padawan</item>	
+    </style>
+    <style name="ProgressBar.Padawan" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_padawan</item>
+    </style>
+    <style name="Theme.Padawan" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_padawan</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Padawan</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Padawan</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Padawan</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Padawan</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Padawan</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_padawan</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_padawan</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Padawan</item>
+        
+                <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Padawan.Widget</item>
+
+    </style>
+    <style name="Theme.Padawan.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Padawan</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Padawan</item>
+    </style>
+</resources>

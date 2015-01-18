@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="title_activity_register">Inscription</string>
+
+    <!-- Strings related to register -->
+    <string name="first_name">Prénom</string>
+    <string name="last_name">Nom</string>
+    <string name="prompt_password_register">Confirmer le mot de passe</string>
+    <string name="action_sign_up">S\'inscrire</string>
+    <string name="action_sign_up_short">S\'inscrire</string>
+    <string name="error_incorrect_password_signup">Les mots de passe ne correspondent pas</string>
+    <string name="error_field_required_signup">Ce champ est réquis</string>
+    <string name="error_on_signup">Problème de création de compte</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\pre-dexed\debug\classes-d7f49f7e2e541e561aabe68abff96ef476a9d44c.jar" />
+    </item>
+    <item
+        jar="C:\android-sdks\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-949142c5706a2b284e5079c417908c9ff5972d74.jar" />
+    </item>
+    <item
+        jar="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-4f1ace8e4e133ff5d161d6deccaa0997e74c23da.jar" />
+    </item>
+    <item
+        jar="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-4f1ace8e4e133ff5d161d6deccaa0997e74c23da.jar" />
+    </item>
+    <item
+        jar="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\pre-dexed\debug\classes-d7f49f7e2e541e561aabe68abff96ef476a9d44c.jar" />
+    </item>
+    <item
+        jar="C:\android-sdks\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\kadary\workspace\padawan-android\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-949142c5706a2b284e5079c417908c9ff5972d74.jar" />
+    </item>
+
+</items>
